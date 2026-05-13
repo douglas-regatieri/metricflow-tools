@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Pôster A4 | [Nome do Site]</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">✨ [Nome do Site]</a>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="poster.html" class="active">Dividir A4</a>
+        </div>
+    </nav>
+
+    <div class="workspace">
+        <aside class="sidebar">
+            <h2>Configurações</h2>
+            
+            <div class="control-group">
+                <label for="imageUpload">1. Escolha a Imagem</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+
+            <div class="control-group">
+                <label id="scaleLabel" for="scaleInput">2. Tamanho (em páginas A4)</label>
+                <input type="number" id="scaleInput" value="2" min="1" max="10">
+                <small id="scaleHelp">Envie uma imagem para definir o tamanho.</small>
+            </div>
+
+            <div class="control-group">
+                <label>3. Modo de Encaixe</label>
+                <select id="edgeMode">
+                    <option value="overlap">Sangria / Sobreposição (Para colar por cima)</option>
+                    <option value="crop">Marcas de Corte (Cortar margem branca impressa)</option>
+                </select>
+            </div>
+
+            <button id="generateBtn" disabled>Baixar PDF Pronto</button>
+            <p id="status"></p>
+        </aside>
+
+        <main class="preview-area">
+            <div id="previewContainer" class="preview-container">
+                <img id="previewImage" src="" alt="Faça o upload de uma imagem na barra lateral" style="display: none;">
+                <div id="gridOverlay" class="grid-overlay"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="poster_script.js"></script>
+</body>
+</html>
