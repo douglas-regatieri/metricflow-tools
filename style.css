@@ -254,3 +254,61 @@ button:hover:not(:disabled) {
     border: 1px dashed rgba(255, 0, 0, 0.8);
     background: rgba(255, 255, 255, 0.1);
 }
+
+/* Estilos do Rodapé */
+.main-footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-credits {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Rodapé específico para a Sidebar (dentro da ferramenta) */
+.sidebar-footer {
+    margin-top: auto; /* Empurra para o final da sidebar */
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.sidebar-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
