@@ -321,3 +321,77 @@ button:hover:not(:disabled) {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+/* Banner de Cookies LGPD */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 9999;
+    max-width: 600px;
+    width: 90%;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+.cookie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cookie-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-cookie {
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-recusar {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+}
+
+.btn-recusar:hover {
+    background-color: #f1f5f9;
+    color: var(--text-main);
+}
+
+.btn-aceitar {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-aceitar:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Modo responsivo para telas pequenas */
+@media (max-width: 600px) {
+    .cookie-banner {
+        bottom: 0;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        border-bottom: none;
+    }
+}
