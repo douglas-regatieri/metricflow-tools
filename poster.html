@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Pôster A4 | Metricflow Tools</title>
+    <title>Gerador de Pôster A4 | Dividir Imagem para Imprimir | Metric Tools</title>
+    <meta name="description" content="Ferramenta gratuita para dividir imagens grandes em várias páginas A4. Amplie, adicione sangria e crie um PDF pronto para imprimir e colar o seu pôster em casa.">
+    <meta name="keywords" content="imprimir imagem em várias folhas a4, dividir foto para imprimir, criador de poster, imprimir tamanho real, rasterbator, metric tools">
+    <link rel="canonical" href="https://tools.metricflow.com.br/poster.html" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="nav-brand">Metricflow Tools</a>
+        <a href="index.html" class="nav-brand">
+            <img src="assets/logo.png" alt="Metricflow Logo" class="nav-logo">
+            Metricflow Tools
+        </a>
         <div class="nav-links">
             <a href="index.html">Início</a>
             <a href="poster.html" class="active">Dividir A4</a>
@@ -43,12 +49,6 @@
             <button id="generateBtn" disabled>Baixar PDF Pronto</button>
             <p id="status"></p>
 
-            <div class="sidebar-footer">
-                <p>Criado por <strong>Douglas Regatieri</strong></p>
-                <p><a href="https://github.com/douglas-regatieri" target="_blank">GitHub</a> | <a href="https://www.instagram.com/metricflowbi" target="_blank">Instagram</a></p>
-                <p style="margin-top: 5px; font-size: 0.75rem;">Metricflow &copy; 2026</p>
-            </div>
-
         </aside>
 
         <main class="preview-area">
@@ -58,6 +58,31 @@
             </div>
         </main>
     </div>
+
+    <section class="seo-content" style="max-width: 800px; margin: 40px auto; padding: 20px;">
+        <h2>Como imprimir uma imagem grande em várias folhas A4?</h2>
+        <p>O Gerador de Pôster do Metric Tools é a solução perfeita para quem precisa imprimir imagens maiores que o tamanho padrão da impressora. Nossa ferramenta divide sua foto automaticamente...</p>
+        
+        <h3>Perguntas Frequentes (FAQ)</h3>
+        <ul>
+            <li><strong>Meus arquivos estão seguros?</strong> Sim. Todo o processamento da imagem acontece no seu próprio navegador. Nenhuma foto é enviada para os nossos servidores.</li>
+            <li><strong>Para que serve a Margem de Sobreposição?</strong> Ela repete um pedaço da imagem nas bordas das folhas, permitindo que você aplique cola e junte as páginas perfeitamente sem deixar espaços brancos.</li>
+        </ul>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-credits">Desenvolvido por Douglas Regatieri | Metricflow</p>
+            <div class="footer-links">
+                <a href="https://github.com/douglas-regatieri" target="_blank">GitHub</a>
+                <a href="mailto:contato@metricflow.com.br">contato@metricflow.com.br</a>
+                <a href="https://www.instagram.com/metricflowbi" target="_blank">Instagram</a>
+            </div>
+            <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 10px;">
+                &copy; 2026 Metric Tools - Ferramenta Gratuita.
+            </p>
+        </div>
+    </footer>
 
     <script src="poster_script.js"></script>
 </body>

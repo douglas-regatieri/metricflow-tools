@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tools.metricflow.com.br/sitemap.xml
